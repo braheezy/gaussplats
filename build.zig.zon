@@ -1,0 +1,14 @@
+.{
+    .name = .gauss_splats,
+    .version = "0.0.1",
+    .minimum_zig_version = "0.16.0",
+    .paths = .{"src"},
+    .dependencies = .{
+        .zonk = .{ .path = "../zonk" },
+        .zmath = .{
+            .url = "git+https://github.com/zig-gamedev/zmath#9f7beb0753bd5cf885285dda8b00361c87c5b6b3",
+            .hash = "zmath-0.11.0-dev-wjwivTktAwA6BEsaW_p-6BFNCYSKMRFONlj6Fxkmuz9d",
+        },
+    },
+    .fingerprint = 0x56975e8948ffca47,
+}
