@@ -4,10 +4,13 @@
     .minimum_zig_version = "0.16.0",
     .paths = .{"src"},
     .dependencies = .{
-        .zonk = .{ .path = "../zonk" },
+        .zonk = .{
+            .url = "git+https://github.com/braheezy/zonk#c198725c9c0941a7a790f6822f0bd79a98f09237",
+            .hash = "zonk-0.0.0-FqIsb8QV5AKn0-r6jWsYMX2iFs1c4kHI_78WRxOb7C4c",
+        },
         .zmath = .{
-            .url = "git+https://github.com/zig-gamedev/zmath#9f7beb0753bd5cf885285dda8b00361c87c5b6b3",
-            .hash = "zmath-0.11.0-dev-wjwivTktAwA6BEsaW_p-6BFNCYSKMRFONlj6Fxkmuz9d",
+            .url = "git+https://github.com/braheezy/zmath#d5fa55fc7d2db3a1ab4dcea1434a0423e7ad5779",
+            .hash = "zmath-0.12.0-wjwivfMtAwBEt0kCv7kh538uzhr02QUPU8Ds5RgU635A",
         },
     },
     .fingerprint = 0x56975e8948ffca47,

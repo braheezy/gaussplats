@@ -25,9 +25,7 @@ pub fn build(b: *std.Build) void {
     b.installArtifact(main_exe);
 
     const run_exe = b.addRunArtifact(main_exe);
-    if (b.args) |args| {
-        run_exe.addArgs(args);
-    }
+    run_exe.addPassthruArgs();
 
     const run_step = b.step("run", "Run the program");
     run_step.dependOn(&run_exe.step);

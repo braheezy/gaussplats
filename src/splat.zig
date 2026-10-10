@@ -267,7 +267,7 @@ pub fn loadPly(io: std.Io, gpa: std.mem.Allocator, filepath: []const u8) !Scene 
                 try readAsFloat(row, z),
             },
             .opacity = try readAsFloat(row, opacity),
-            .spherical_harmonics = [_]f32{0.0} ** SH_FLOAT_COUNT,
+            .spherical_harmonics = @splat(0.0),
             .scale = .{
                 try readAsFloat(row, scale_0),
                 try readAsFloat(row, scale_1),
